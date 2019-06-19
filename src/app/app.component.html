@@ -2,3 +2,14 @@
 <p>
   Start editing to see some magic happen :)
 </p>
+
+<h4> {{recommended}}</h4>
+<img [src]="itemImageUrl2">
+
+<ul>
+  <li *ngFor="let customer of customers">{{customer.name}}</li>
+</ul>
+
+<label>Type something:
+  <input #customerInput>{{customerInput.value}}
+</label>
